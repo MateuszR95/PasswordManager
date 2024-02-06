@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasła</title>
+    <meta name="description" content="Sprawdzamy poprawność haseł">
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<form>
+    <label for="passwordInput">Hasło</label>
+    <br>
+    <input type="password" id="passwordInput" name="passwordInput" required>
+    <p id="passwordError" class="error"></p>
+    <br>
+    <label for="confirmPasswordInput">Powtórz hasło</label>
+    <br>
+    <input type="password" id="confirmPasswordInput" name="confirmPasswordInput" required>
+    <p id="confirmPasswordError" class="error"></p>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
